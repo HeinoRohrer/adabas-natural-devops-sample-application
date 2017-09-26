@@ -1,0 +1,93 @@
+DEFINE DATA LOCAL
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/** New Local Data Area TESTDVZ.
+/**
+/** :author hrh
+/* TODO Enter your data definitions here
+1 L2612VZ2 (1:3)
+  2 #DATEN-TAB22 (A1/1:1265) 
+*  2#DATEN-TAB22                    A       250(1:10)
+  2 REDEFINE #DATEN-TAB22
+    3 ES0000 (A14)
+    3 REDEFINE ES0000
+      4 ES0001 (A2) /* REDEF. FROM PREDICT
+      4 ES0010 /* REDEF. FROM PREDICT
+        5 ES0011 (A3) /* REDEF. FROM PREDICT
+        5 ES0012 (A9) /* REDEF. FROM PREDICT
+        5 REDEFINE ES0012
+          6 ES0012-7 (A7) /* REDEF. FROM PREDICT
+          6 ES0012-W (A2) /* REDEF. FROM PREDICT
+    3 ES0015 (A3)
+    3 ES-VORLAUF
+      4 ES-UEB (A2)
+      4 ES-ART (N2.0)
+      4 ES-MKZ (A2)
+      4 ES-BEGINN (A8)
+      4 REDEFINE ES-BEGINN
+        5 ES-BEGINN-J (N4) /* REDEF. FROM PREDICT
+        5 ES-BEGINN-M (N2) /* REDEF. FROM PREDICT
+        5 ES-BEGINN-T (N2) /* REDEF. FROM PREDICT
+      4 ES-KOMPDAT (A8)
+      4 ES-ABR-DAT (A8)
+      4 REDEFINE ES-ABR-DAT
+        5 ES-ABR-J (N4) /* REDEF. FROM PREDICT
+        5 ES-ABR-M (N2) /* REDEF. FROM PREDICT
+        5 ES-ABR-T (N2) /* REDEF. FROM PREDICT
+    3 ES-ND-BLOCK
+      4 ES-NDH
+        5 ES-NDT-GR
+          6 ES-NDT (A30)
+      4 ES-ND-GR
+        5 ES-MELD-TYP
+          6 ES-H-ANM (A1)
+          6 ES-H-AEN (A1)
+          6 ES-H-ABM (A1)
+          6 ES-H-UMM (A1)
+          6 ES-TFT (A19)
+          6 ES-AG-GR
+            7 ES-AGSTNR (N13.0)
+            7 ES-REFD-AG (A8)
+            7 ES-AN
+              8 ES-IDNR (A11)
+              8 ES-GEBDAT (A8)
+              8 ES-HG (A5)
+              8 ES-STORNO (A5)
+              8 ES-GWFREIB (N5.0)
+              8 ES-GUELTAB (A8)
+              8 ES-DATENUEB (A5)
+              8 ES-REFGUELTAB (A8)
+              8 ES-BESCH-BEG (A8)
+              8 ES-REFDAT-AG (A8)
+              8 ES-ABMELDEDAT (A8)
+              8 ES-HINWEIS
+                9 ES-CODE (N9.0)
+                9 ES-TEXT (A250)
+              8 C-ES-ELSTAM-MC (B2)
+              8 ES-ELSTAM-MC (A67/1:12)
+              8 REDEFINE ES-ELSTAM-MC
+                9 ES-ELSTAM (1:12) /*     ELStAM
+                 10 ES-GUELT (A8) /*     gueltigAb
+                 10 ES-STKL-GR /*     Steuerklasse
+                 11 ES-STKL (N1) /*     nummer
+                 10 ES-KFB-GR /*     Kinderfreibetrag
+                 11 ES-KFB (N2.1) /*     anzahl
+                 10 ES-KST-GR /*     Kirchensteuer
+                 11 ES-KST (A2) /*     konfession
+                 10 ES-KST-EHEG-GR /*     KirchensteuerEhegatte
+                 11 ES-KST-EHEG (A2) /*     konfession
+                 10 ES-FAKTOR-GR /*     Faktor
+                 11 ES-FAKTOR (N3) /*     wert
+                 10 ES-FREIBTR-GR /*     Freibetrag
+                 11 ES-FREIBTR-J (N5.0) /*     jahr
+                 11 ES-FREIBTR-M (N5.0) /*     monat
+                 11 ES-FREIBTR-W (N5.2) /*     woche
+                 11 ES-FREIBTR-T (N5.2) /*     tag
+                 10 ES-HINZUBTR-GR /*     Hinzurechnungsbetrag
+                 11 ES-HINZUBTR-J (N5.0) /*     jahr
+                 11 ES-HINZUBTR-M (N5.0) /*     monat
+                 11 ES-HINZUBTR-W (N5.2) /*     woche
+                 11 ES-HINZUBTR-T (N5.2) /*     tag
+END-DEFINE
