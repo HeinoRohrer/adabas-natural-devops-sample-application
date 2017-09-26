@@ -1,0 +1,23 @@
+DEFINE DATA LOCAL
+/* >Natural Source Header 000000
+/* :Mode S
+/* :CP
+/* <Natural Source Header
+/** New Local Data Area LDAHRH1.
+/**
+/** :author hrh
+/* TODO Enter your data definitions here
+01 ES-HINWEIS1
+02 ES-HINWEIS2
+03 ES-HINWEIS3
+04 ES-HINWEIS4
+05 ES-HINWEIS5
+06 ES-HINWEIS6
+07 ES-HINWEIS7
+08 ES-HINWEIS8                                     
+  09 ES-CODE (N9.0)                               
+  09 ES-TEXT (A250)
+  09 REDEFINE ES-TEXT
+    10 ES-TEXT-A (A150)
+    10 ES-TEXT-B (A100)
+END-DEFINE
